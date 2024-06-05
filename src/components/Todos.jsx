@@ -6,9 +6,11 @@ const Todos = ({ todos, toggleCompleted, deleteTodo}) => {
     <div style={styles.container}>
       {todos.map((todo) => {
         return (
+          
           <TodoItem
             key={todo.id}
             todo={todo}
+            
             toggleCompleted={toggleCompleted}
             deleteTodo={deleteTodo} 
           />
